@@ -1,9 +1,12 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import ProductListPage from "./pages/ProductListPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import Homepage from "./components/Homepage";
+import { Routes, Route } from 'react-router-dom';
+import CartPage from "./components/CartPage";
+import ProductListPage from "./pages/ProductListPage";
 
-import { Routes, Route } from "react-router-dom";
+
 
 
 function App() {
@@ -13,8 +16,11 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<ProductListPage />} />
+        
+        <Route path="/" element={<Homepage />} />
         <Route path="/product/details/:productId" element={<ProductDetailsPage />} />
+        <Route path="/" element={<ProductListPage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
 
     </div>
@@ -22,3 +28,7 @@ function App() {
 }
 
 export default App;
+
+
+
+
