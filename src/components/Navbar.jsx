@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <Link to="/">Home</Link>
-      <Link to="/cart/5">🛒</Link> {/* Replace 5 with the actual cart ID */}
+      <Link to="/cart/5">🛒</Link> 
     </nav>
   );
 };
